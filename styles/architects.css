@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Work Sans';
+}
+
+/* shared styles */
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+/* header related styles */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding-top: 20px;
+    padding-left: 220px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 40px;
+
+}
+
+nav ul {
+    display: flex;
+    margin-right: 250px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner related styles */
+.banner {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: #131313;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: #727272;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner-img img {
+    width: 100%;
+    margin-top: 20px;
+}
+.banner-img{
+  padding-right: 240px;
+  padding-left: 240px;
+}
+/* responsive section for small device */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-img{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    nav li{
+        margin: 0 20px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+}
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+}
+/* main styles */
+/* team related styles */
+.team-container{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 300px;
+    
+}
+/* team title er kaj internal css a korci */
+.team-description{
+    color:  #727272;
+font-family: Work Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px; 
+
+}
