@@ -68,67 +68,230 @@ nav a {
     font-size: 16px;
     font-weight: 400;
 }
+
 .banner-img img {
     width: 100%;
     margin-top: 20px;
 }
-.banner-img{
-  padding-right: 240px;
-  padding-left: 240px;
-}
-/* responsive section for small device */
-@media screen and (max-width:576px) {
-    header{
-        padding: 20px;
 
-    }
-    nav{
-        flex-direction: column;
-    }
-    .banner-img{
-        padding-right: 0;
-        padding-left: 0;
-    }
-    nav li{
-        margin: 0 20px;
-    }
-    nav ul{
-        margin-right: 20px;
-    }
+.banner-img {
+    padding-right: 240px;
+    padding-left: 240px;
 }
-/* medium devices */
-@media screen and (min-width:576px) and (max-width:960px) {
-    header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    nav ul{
-        margin-right: 20px;
-    }
-}
-/* main styles */
+
 /* team related styles */
-.team-container{
+
+.team-container {
     display: flex;
     align-items: center;
     gap: 70px;
 }
-.team-img-container{
+
+.team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 40px;
     margin-left: 300px;
-    
+
 }
+
 /* team title er kaj internal css a korci */
-.team-description{
-    color:  #727272;
-font-family: Work Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px; 
+.team-description {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+/* features related styles */
+.feature-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.feature-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.card-f-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.features {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+
+}
+.feature-img{
+    height: 90%;
+    margin-left: 50px;
+}
+
+.card1 {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.feature-title{
+    border-left: 5px solid #FF900E ;
+  padding-left:20px ;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+
+}
+/* facts related styles */
+.facts {
+    text-align: cente;
+}
+
+.facts-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.facts-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.card-stats {
+    font-size: 40px;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-weight: 600;
+    color: #727272;
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+
+/* sponsor styles */
+
+.sponsors-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.sponsors-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.sponsors-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 40px;
+    align-items: center;
+}
+
+.sponsors-img-container img {
+    width: 165px;
+}
+
+.sponsors {
+    text-align: center;
+}
+
+/* responsive section for small device */
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+
+    }
+
+    nav,
+    .team-container,
+    .facts-card-container,
+    .sponsors-img-container {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    nav li {
+        margin: 0 20px;
+    }
+
+    nav ul {
+        margin-right: 20px;
+    }
+
+    .team-img-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-right: 370px;
+    }
+
+}
+
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-right: 20px;
+    }
+
 
 }
